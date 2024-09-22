@@ -1,0 +1,35 @@
+/* .no-caret .dropdown-toggle::after {
+    display: none !important;
+  }
+   */
+
+
+   @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999999;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .nav-item.active i, .nav-item.active span {
+    color: #6200EA;
+  }
+  
+  .bottom-nav .primary-action {
+    background-color: #6200EA;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  

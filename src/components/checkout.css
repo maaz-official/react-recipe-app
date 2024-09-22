@@ -1,0 +1,36 @@
+/* Base styles */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  }
+  
+  /* Style active stepss */
+  .step-active {
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #007bff;
+    cursor: pointer;
+  }
+  
+  .step-active:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  /* Style disabled steps */
+  .step-disabled {
+    color: #6c757d;
+    font-weight: normal;
+    padding: 10px;
+    cursor: not-allowed;
+    border-bottom: 2px solid transparent;
+  }
+  
+  /* Adjustments for all screen sizes */
+  .nav-item {
+    margin: 0px 20px; /* Base margin for spacing between steps */
+  }
+  

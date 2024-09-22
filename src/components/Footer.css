@@ -1,0 +1,15 @@
+/* Ensures that the footer remains at the bottom */
+html, body {
+    height: 100%;  /* Make sure the page height is at least the full height of the viewport */
+  }
+  
+  #root {  /* Assuming #root is your main div wrapper in public/index.html */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* This makes sure that your content pushes the footer down */
+  }
+  
+  .footer {
+    margin-top: auto;  /* This pushes the footer to the bottom of the flex container */
+  }
+  
