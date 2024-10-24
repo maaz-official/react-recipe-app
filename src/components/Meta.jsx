@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-function Meta({ title, description, keywords, canonicalUrl, imageUrl }) {
+function Meta({ title, description, keywords, canonicalUrl }) {
   return (
     <Helmet>
       {/* Basic SEO */}
@@ -14,15 +14,12 @@ function Meta({ title, description, keywords, canonicalUrl, imageUrl }) {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={imageUrl || "/default-image.jpg"} />
       <meta property="og:site_name" content="LazzyShop" />
 
       {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={imageUrl || "/default-image.jpg"} />
       <meta name="twitter:site" content="@LazzyShop" />
       <meta name="twitter:creator" content="@LazzyShop" />
 

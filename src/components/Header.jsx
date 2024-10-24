@@ -118,7 +118,7 @@ const Header = () => {
                 <IconButton onClick={handleProfileMenuClick} sx={{ display: { xs: 'none', md: 'flex' } }}>
                   {/* Display profile picture or fallback to user icon */}
                   {userInfo.profileImage ? (
-                    <Avatar src={`https://backend-shop-five.vercel.app${userInfo.profileImage}`} alt={userInfo.name} />
+                    <Avatar src={userInfo.profileImage}/>
                   ) : (
                     <Avatar>
                       <FaUser style={{ color: '#fff' }} />
@@ -358,7 +358,7 @@ const Header = () => {
     >
       {userInfo?.profileImage ? (
         <Avatar
-          src={`https://backend-shop-five.vercel.app${userInfo.profileImage}`}
+          src={userInfo.profileImage}
           alt={userInfo.name}
           sx={{
             width: 50,

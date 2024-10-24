@@ -116,7 +116,7 @@ function ProductPage() {
         {/* Left - Product Images */}
         <div className="w-full md:w-1/2 relative">
           <div className="relative">
-            <img src={selectedImage.startsWith('http') ? selectedImage : `https://backend-shop-five.vercel.app${selectedImage}`} alt={product.name} className="w-full rounded-lg cursor-pointer" />
+            <img src={selectedImage.startsWith('http') ? selectedImage : `${product.selectedImage}`} alt={product.name} className="w-full rounded-lg cursor-pointer" />
             {percentageOff > 0 && (
               <div className="absolute top-2 left-2 bg-orange-500 text-white px-2 py-1 rounded-full text-sm">
                 {percentageOff}% OFF
@@ -130,7 +130,7 @@ function ProductPage() {
               {[product.image, ...product.images].map((img, idx) => (
                 <img
                   key={idx}
-                  src={img.startsWith('http') ? img : `https://backend-shop-five.vercel.app${img}`}
+                  src={img}
                   alt={`Thumbnail ${idx}`}
                   className={`w-16 h-16 object-cover rounded-lg cursor-pointer ${selectedImage === img ? 'border-4 border-orange-500' : 'border-2 border-gray-300'}`}
                   onClick={() => setSelectedImage(img)}

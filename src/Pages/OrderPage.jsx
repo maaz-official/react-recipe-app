@@ -258,7 +258,7 @@ const ListItems = ({ orderItems }) => (
         <Grid item xs={3} sm={2}>
           <CardMedia
             component="img"
-            image={item.image.startsWith('http') ? item.image : `https://backend-shop-five.vercel.app${item.image}`}
+            image={item.image}
             alt={item.name}
             sx={{ borderRadius: '8px', width: '100%', boxShadow: 2 }}
           />

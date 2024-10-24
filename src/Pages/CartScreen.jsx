@@ -90,7 +90,7 @@ const Cart = () => {
                 {/* Product Image and Details */}
                 <Box sx={{ display: "flex", alignItems: "center", flex: 1 }}>
                   <img
-                    src={`https://backend-shop-five.vercel.app${item.image}`} // Ensure proper image URL path
+                    src={item.image} // Ensure proper image URL path
                     alt={item.name}
                     width="120px"
                     style={{ borderRadius: "8px" }}
