@@ -15,7 +15,7 @@ function Product({ product }) {
       <Link to={`/product/${product._id}`}>
         {/* Main product image */}
         <Card.Img
-  src={product.image.startsWith('http') ? product.image : `http://localhost:5000${product.image}`} 
+  src={product.image.startsWith('http') ? product.image : `https://backend-shop-five.vercel.app${product.image}`} 
   variant="top"
           className="img-fluid product-image"
           style={{

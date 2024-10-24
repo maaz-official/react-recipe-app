@@ -45,7 +45,7 @@ function ProfilePage() {
       setName(userInfo.name);
       setEmail(userInfo.email);
       setProfilePicturePreview(
-        userInfo.profileImage ? `http://localhost:5000${userInfo.profileImage}` : "" // Load profile image from user info
+        userInfo.profileImage ? `https://backend-shop-five.vercel.app${userInfo.profileImage}` : "" // Load profile image from user info
       );
     }
   }, [userInfo]);

@@ -125,7 +125,7 @@ function PlaceOrderPage() {
                                                     <Grid item md={1}>
                                                         <CardMedia
                                                             component="img"
-                                                            image={item.image.startsWith('http') ? item.image : `http://localhost:5000${item.image}`}
+                                                            image={item.image.startsWith('http') ? item.image : `https://backend-shop-five.vercel.app${item.image}`}
                                                             alt={item.name}
                                                             sx={{ width: '100%', height: 'auto' }}
                                                         />

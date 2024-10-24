@@ -37,7 +37,7 @@ function ProductCarousel() {
           <Link to={`/product/${product._id}`} style={{ textDecoration: "none" }}>
             <Box
               component="img"
-              src={product.image.startsWith('http') ? product.image : `http://localhost:5000${product.image}`} 
+              src={product.image.startsWith('http') ? product.image : `https://backend-shop-five.vercel.app${product.image}`} 
               alt={product.name}
               sx={{
                 maxHeight: "80%", // Limit the image size to 80% of the carousel height
